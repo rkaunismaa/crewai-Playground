@@ -32,6 +32,20 @@ We are going to step through the Matthew Berman video [Step-by-Step Langtrace + 
 
  OK Nice! I got the crew working with Ollama running locally! I am guessing getting it to work against KAUWITB should be as easy as setting the ip ...
 
+ ## Wednesday, November 20, 2024
+
+ So I am attempting to run the demo_app against LMStudio locally, and it runs without errors, even though I do not have LMStudio running! OK! It is still using the OpenAI API for this! Wow! ... good to know!
+
+ OK That's interesting! CrewAI will spin up the ollama model if it is not already running! And the model value set in crew.py DOES drive which model gets loaded, NOT what is set in .env ...
+
+ OK. Gonna start using LangTrace. Created a new account using my google account.
+
+ 11) pip install langtrace-python-sdk
+
+ OK. So I've messed something up here. The crewai code that generated the demo-app wrote into a python virtual environment, so I don't need to be using mamba or conda for this stuff. I am gonna torch everything (except this repostory) and start over.
+
+ Whelp, turns out there was no need for this! [Default CrewAI virtual environment - Conflict with Conda](https://community.crewai.com/t/default-crewai-virtual-environment-conflict-with-conda/1116) The LangTrace stuff is now working! Great!
+
 
 
 
