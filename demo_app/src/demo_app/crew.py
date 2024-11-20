@@ -9,7 +9,7 @@ from crewai.project import CrewBase, agent, crew, task
 # Pass Ollama Model to Agents: When creating your agents within the CrewAI framework, you can pass the Ollama model as an argument to the Agent constructor. For instance:
 
 # from langchain_ollama import OllamaLLM
-# ollama_llm = OllamaLLM(model="ollama/llama3.2")
+# ollama_llm = OllamaLLM(model="llama3.2")
 
 
 
