@@ -46,6 +46,13 @@ We are going to step through the Matthew Berman video [Step-by-Step Langtrace + 
 
  Whelp, turns out there was no need for this! [Default CrewAI virtual environment - Conflict with Conda](https://community.crewai.com/t/default-crewai-virtual-environment-conflict-with-conda/1116) The LangTrace stuff is now working! Great!
 
+ ## Friday, November 22, 2024
+
+ Gonna give [FireCrawl Scrape Website](https://docs.crewai.com/tools/firecrawlscrapewebsitetool) a go ... 
+
+ 12) pip install firecrawl-py 'crewai[tools]' # this installed firecrawl-py-1.5.0
+
+
 
 
 
