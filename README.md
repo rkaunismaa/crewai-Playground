@@ -52,6 +52,12 @@ We are going to step through the Matthew Berman video [Step-by-Step Langtrace + 
 
  12) pip install firecrawl-py 'crewai[tools]' # this installed firecrawl-py-1.5.0
 
+ ## Saturday, November 23, 2024
+
+ Hmm thinking of exploring Scrapy to .... scrape a website. But isn't this repo about CrewAI??
+
+ 13) mamba install conda-forge::scrapy # this installed scrapy-2.12.0
+
 
 
 
