@@ -70,6 +70,20 @@ We are going to step through the Matthew Berman video [Step-by-Step Langtrace + 
 
   OK! So how can I use LMStudio?? Hmm for now, I am gonna stear clear of that question, just because it is working locally with ollama and I can see all the trace information with langtrace.
 
+  Hmm gonna install the latest version of CrewAI ... currently in the crewai conda environment, we are at crewai 0.80.0, and crewai-tools 0.14.0
+
+  14) pip install crewai --upgrade
+
+  And now we are at crewai 0.86.0 and crewai-tools 0.17.0 
+
+  Nice. Running 'crewai run' from within the demo_app folder still runs without errors. And just to see how the demo_app may differ, I am going to run ...
+
+  crewai create crew demo_app_2 ... selecting 'ollama' as the provider, and 'ollama/mixtral' as the model.
+
+  I also ran 'ollama run mixtral'.
+
+
+
 
 
 
