@@ -58,6 +58,18 @@ We are going to step through the Matthew Berman video [Step-by-Step Langtrace + 
 
  13) mamba install conda-forge::scrapy # this installed scrapy-2.12.0
 
+ ## Tuesday, December 31, 2024
+
+ Getting back to this ... how do I spin stuff up?? 
+
+  1) run 'crewai run' from the root folder? Nope! 
+  2) mamba activate crewai, and then run 'crewai run' from the root folder? Nope! Gonna look at the video ... 
+  3) move into the 'demo_app' folder, and then run 'crewai run' ... Yup! That now works! And it is running locally using ollama.
+
+  Right! So how do I switch over to LMStudio?? ... Wait ... where can I see the LangTrace stuff?? Right ... langtrace.ai ... sign in with your github account ...
+
+  OK! So how can I use LMStudio?? Hmm for now, I am gonna stear clear of that question, just because it is working locally with ollama and I can see all the trace information with langtrace.
+
 
 
 

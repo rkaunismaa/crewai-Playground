@@ -31,7 +31,10 @@ langtrace.init(api_key = os.environ['LANGTRACE_API_KEY'])
 # Check our tools documentations for more information on how to use them
 # from crewai_tools import SerperDevTool
 
-ollama_llm=LLM(model="ollama/qwen2.5-coder", base_url="http://localhost:11434")
+# Just just changing the base_url to use LMStudio work?? Seriously doubt it, but let's try it out! ... Nope!! It doesn't work!
+# ollama_llm=LLM(model="ollama/qwen2.5-coder", base_url="http://127.0.0.1:1234/v1") 
+
+ollama_llm=LLM(model="ollama/qwen2.5-coder", base_url="http://localhost:11434") # This works fine!
 # ollama_llm=LLM(model="ollama/llama3.2", base_url="http://localhost:11434")
 # ollama_llm=LLM(model="ollama/llama3.1", base_url="http://localhost:11434")
 # llm=LLM(model="ollama/opencoder", base_url="http://localhost:11434")
