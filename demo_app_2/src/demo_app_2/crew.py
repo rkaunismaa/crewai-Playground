@@ -1,3 +1,7 @@
+# from langtrace_python_sdk import langtrace
+# langtrace.init(api_key='pk-lf-6cdc2498-438f-4f8b-9d56-3c0a7a762571')
+
+
 from crewai import Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task
 
@@ -5,6 +9,16 @@ from crewai.project import CrewBase, agent, crew, task
 from langtrace_python_sdk import langtrace
 import os
 langtrace.init(api_key = os.environ['LANGTRACE_API_KEY'])
+
+
+# implement a local version of langfuse
+# from langfuse import Langfuse
+
+# langfuse = Langfuse(
+#   secret_key="sk-lf-e25dad24-b42e-4883-b1ce-9b0a37c828ee",
+#   public_key="pk-lf-6cdc2498-438f-4f8b-9d56-3c0a7a762571",
+#   host="http://localhost:3000"
+# )
 
 
 # If you want to run a snippet of code before or after the crew starts, 

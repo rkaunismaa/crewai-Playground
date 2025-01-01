@@ -94,6 +94,13 @@ Gonna give [Langfuse](https://langfuse.com/) a go today ... by [running Langfuse
 
 Yup! That spins up effortlessly! And looks real nice. Gonna Remove langtrace stuff from demo_app_2 and get it to use langfuse.
 
+Wow really!?? There does not appear to be any CrewAI integration with Lanfuse! WTF!!? I see Langfuse has integrations with Langchain, Langserve, Haystack, LLamaindex and a bunch of other way more obscure packages, but NOTHING for CrewAI!
+
+Looks like I need to install langfuse to the project ...
+
+15) pip install  langfuse
+
+Sigh. I cannot get langfuse stuff to work within demo_app_2, so I am just going to continue using langtrace just becase it is already working. 
 
 
 

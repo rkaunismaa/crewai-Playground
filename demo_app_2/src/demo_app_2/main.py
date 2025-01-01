@@ -2,6 +2,21 @@
 import sys
 import warnings
 
+# # Initialize Langfuse handler
+# from langfuse.callback import CallbackHandler
+# langfuse_handler = CallbackHandler(
+#     secret_key="sk-lf-e25dad24-b42e-4883-b1ce-9b0a37c828ee",
+#     public_key="pk-lf-6cdc2498-438f-4f8b-9d56-3c0a7a762571",
+#     host="http://localhost:3000", # Localhost
+#     # host="https://cloud.langfuse.com", # 🇪🇺 EU region
+#   # host="https://us.cloud.langfuse.com", # 🇺🇸 US region
+# )
+ 
+# # Your Langchain code
+ 
+# # Add Langfuse handler as callback (classic and LCEL)
+# chain.invoke({"input": "<user_input>"}, config={"callbacks": [langfuse_handler]})
+
 from demo_app_2.crew import DemoApp2
 
 warnings.filterwarnings("ignore", category=SyntaxWarning, module="pysbd")
