@@ -82,7 +82,13 @@ We are going to step through the Matthew Berman video [Step-by-Step Langtrace + 
 
   I also ran 'ollama run mixtral'.
 
+  ## Wednesday, January 1, 2025
 
+  Right. I tried to use the langtrace stuff in demo_app_2 but it was not finding the package, so the solution was once again to implement the solution found [here](https://community.crewai.com/t/default-crewai-virtual-environment-conflict-with-conda/1116)
+
+I ran 'ollama run mixtral:8x22b' on KAUWITB ... I should be able to acces this via Ollama by just changing the ip in demo_app_2/.env, right??
+
+Gonna give [Langfuse](https://langfuse.com/) a go today ... by [running Langfuse locally](https://langfuse.com/self-hosting/local). I really want to be able to run everything locally.
 
 
 
