@@ -145,13 +145,13 @@ I picked 1, for openai, because I want to see what it generates.
 
 Then it asked:
 
-Select a model to use for Openai:
-1. gpt-4
-2. gpt-4o
-3. gpt-4o-mini
-4. o1-mini
-5. o1-preview
-q. Quit
+  Select a model to use for Openai:
+  1. gpt-4
+  2. gpt-4o
+  3. gpt-4o-mini
+  4. o1-mini
+  5. o1-preview
+  q. Quit
 
 I selected 3, gpt-40-mini.
 
