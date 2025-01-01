@@ -110,6 +110,58 @@ Hmm the latest CrewAI is no longer using poerty for dependency management, but n
 
 Hmm so it looks like UV is way faster than pip, poetry or virtualenv ... yeah, gonna actually create something newer for all of this CrewAI stuff ... but keep the code in this repo. I also think this may make stuff easier to replicate between the kitchen computer and KAUWITB. I also think it can replace conda/mamba.
 
+OK. Opened up a new terminal window, then ran the following commands :
+
+ 1) mamba deactivate                                 # deactivates any mamba silliness that may get in the way.
+ 2) curl -LsSf https://astral.sh/uv/install.sh | sh  # installs uv
+ 3) uv                                               # validates that uv has been installed.
+ 4) pip install 'crewai[tools]'                      # installs crewai and crewai[tools]
+ 5) pip freeze | grep crewai                         # checks the installed versions.
+
+    rob@rob-MS-7C91:~$ pip freeze | grep crewai
+    crewai==0.86.0
+    crewai-tools==0.17.0 
+
+Now make sure the current terminal window is in the root folder of the 'CrewAI-Playground' repository, and then run ...
+
+ 6) crewai create crew latest-ai-development
+
+ This will first ask 'Select a provider to set up:'
+
+    Select a provider to set up:
+    1. openai
+    2. anthropic
+    3. gemini
+    4. groq
+    5. ollama
+    6. watson
+    7. bedrock
+    8. azure
+    9. cerebras
+    10. other
+    q. Quit
+
+I picked 1, for openai, because I want to see what it generates.
+
+Then it asked:
+
+Select a model to use for Openai:
+1. gpt-4
+2. gpt-4o
+3. gpt-4o-mini
+4. o1-mini
+5. o1-preview
+q. Quit
+
+I selected 3, gpt-40-mini.
+
+Then it asked:
+
+Enter your OPENAI API key (press Enter to skip): 
+
+I pressed Enter to skip this step.
+
+
 
 
 
