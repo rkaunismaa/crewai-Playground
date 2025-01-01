@@ -102,6 +102,10 @@ Looks like I need to install langfuse to the project ...
 
 Sigh. I cannot get langfuse stuff to work within demo_app_2, so I am just going to continue using langtrace just becase it is already working. 
 
+Yeah so every time I re-run the app, the 'report.md' file gets regenerated with different content. Is this ONLY using parametric knowledge, or is search being used? Wow, is all of this every 'black boxy' for me! Like WTF is going on? How is stuff being called? I am guessing looking at the langtrace stuff could provide insight into this. My first impression of all of this is that CrewAI is NOT using search, meaning it is not using any search tool to find relevant docs on the internet.
+
+Hmm the latest CrewAI is no longer using poerty for dependency management, but now uses [UV](https://docs.astral.sh/uv/). Hmm so it looks like UV is way faster than pip, poetry or virtualenv ... yeah, gonna actually create something newer for all of this CrewAI stuff ... but keep the code in this repo. I also think this may make stuff easier to replicate between the kitchen computer and KAUWITB. I also think it can replace conda/mamba.
+
 
 
 
