@@ -161,6 +161,13 @@ Enter your OPENAI API key (press Enter to skip):
 
 I pressed Enter to skip this step.
 
+ 7) cd latest-ai-development
+ 8) crewai install                      # this installs a ton of stuff REALLY FAST! WOW IS UV FAST!
+ 9) crewai run                          # this runs the crew and generates the report.md file.
+
+This will be the first call I have made to OpenAI this year!
+
+
 
 
 
