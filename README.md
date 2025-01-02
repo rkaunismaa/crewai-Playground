@@ -177,6 +177,18 @@ Disable the langtrace stuff, then change .env to use local ollama with mixtral w
 
 BTW using ollama/mixtral locally puts a huge load on all 16 cores of the cpu as well as taking up about 5.5gb of vram. Nice to see ollama offloads stuff to the cpu when there is not enough gpu vram!
 
+Why does changing the .env file from ...
+
+    MODEL=ollama/mixtral
+    API_BASE=http://localhost:11434
+
+... to ... 
+
+    MODEL=ollama/mixtral
+    API_BASE=http://192.168.2.16:11434
+
+... NOT result in using Ollama on KAUWITB?? This SILL uses the local machine! I don't get it!? .. 
+
 
 
 
