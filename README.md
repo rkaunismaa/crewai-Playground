@@ -200,6 +200,8 @@ Just out of curiosity, when I spin up a new crewai and select the Ollama provide
     2. ollama/mixtral
     q. Quit
 
+Yup! ollama/dolphin-mixtral works just fine!
+
 
 
 
