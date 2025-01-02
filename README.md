@@ -165,7 +165,11 @@ I pressed Enter to skip this step.
  8) crewai install                      # this installs a ton of stuff REALLY FAST! WOW IS UV FAST!
  9) crewai run                          # this runs the crew and generates the report.md file.
 
-This will be the first call I have made to OpenAI this year!
+This will be the first call I have made to OpenAI this year! Wow! The total cost for that run was less than a penny!
+
+## Thursday, January 2, 2025
+
+Gonna rerun latest_ai_development using GPT-4 to see the results. Wow! Gpt-4 cost $0.12 ! ... sure it is still cheap, but it is way more expensive than gpt-40-mini
 
 
 
