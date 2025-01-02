@@ -171,6 +171,12 @@ This will be the first call I have made to OpenAI this year! Wow! The total cost
 
 Gonna rerun latest_ai_development using GPT-4 to see the results. Wow! Gpt-4 cost $0.12 ! ... sure it is still cheap, but it is way more expensive than gpt-40-mini
 
+OK. So I tried to run latest-ai-development using langtrace but it can't find the module. Do I use UV to import langtrace?
+
+Disable the langtrace stuff, then change .env to use local ollama with mixtral works fine. So how do I get it to work nicely with langtrace? OK! Right! The solution was to modify the .venv/pyvenv.cfg file to include-system-site-packages = true from false.
+
+BTW using ollama/mixtral locally puts a huge load on all 16 cores of the cpu as well as taking up about 5.5gb of vram. Nice to see ollama offloads stuff to the cpu when there is not enough gpu vram!
+
 
 
 
