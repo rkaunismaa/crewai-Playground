@@ -202,7 +202,23 @@ Just out of curiosity, when I spin up a new crewai and select the Ollama provide
 
 Yup! ollama/dolphin-mixtral works just fine!
 
+Hmm so how easy is it to swtich from, say openai or ollama, to, say, groq?
 
+crewai create crew groq ... 
+
+        Select a model to use for Groq:
+        1. groq/llama-3.1-8b-instant
+        2. groq/llama-3.1-70b-versatile
+        3. groq/llama-3.1-405b-reasoning
+        4. groq/gemma2-9b-it
+        5. groq/gemma-7b-it
+        q. Quit
+
+When I select groq, I get the above models as options. Hmm I selected 3, and then it asked for my Groq key ... I provided this. Wow ... looking at the generated code, I can see that key has been written into the .env file. That is way to insecure for my liking! But let's give it go, shall we ...?
+
+I terminalled into the new groq folder, and then ran 'crewai install' ... this installs a ton of dependencies using UV for dependency management. Now will tweak the .venv/pyvenv.cfg file to 'include-system-site-packages = true' and then run 'crewai run' to see if it runs. Hmm Nope! Looking at the console log, I can see that the model 'groq/llama-3.1-405b-reasoning' has been 'decommissioned and is no longer supported'. Looking at [groq supported models](https://console.groq.com/docs/models) I will tweak the .env file to change 'MODEL=groq/llama-3.1-405b-reasoning' to 'MODEL=groq/llama3-70b-8192' and then run 'crewai run' again ... Nice! That ran, and damn, is it ever fast! Now gonna bake in langtrace and run it again. Yup! The groq project now works with langtrace and uses groq! Nice! 
+
+So before I commit this new groq code, I am gonna kill that working key from the .env file. Wait! I don't need to do this, because that file is ignored by git by default! Nice! 
 
 
 
