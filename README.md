@@ -189,6 +189,20 @@ Why does changing the .env file from ...
 
 ... NOT result in using Ollama on KAUWITB?? This SILL uses the local machine! I don't get it!? .. 
 
+So re-running 'crewai run' again and again ... shows you will never get the same resulting 'report.md' and that the results differ vastly from one run to the next. The question I have is are the results from parametric knowledge or from search? Hmm well looking at the [Serper Dashboard](https://serper.dev/dashboard) reveals I have not made any calls yet to this service ... so it must be parametric knowledge!
+
+Hmm I am going to try a different model to see how the results differ. Can I just pick any model available from Ollama?? Gonna download and try [dolphin-mixtral](https://ollama.com/library/dolphin-mixtral)
+
+Just out of curiosity, when I spin up a new crewai and select the Ollama provider, I get the following Ollama models:
+
+    Select a model to use for Ollama:
+    1. ollama/llama3.1
+    2. ollama/mixtral
+    q. Quit
+
+
+
+
 
 
 
