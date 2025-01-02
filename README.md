@@ -222,6 +222,9 @@ So before I commit this new groq code, I am gonna kill that working key from the
 
 OK Nice! I cloned this repo to KAUWITB, set stuff up and was able to 'crewai run' the groq project!
 
+Gonna crewai run latest_ai_development on KAUWITB using ollama/mixtral ... Yeah, so each crewai folder has its own .venv folder that gets generated when you run 'crewai install' ... the contents of this folder are NOT saved into github, cuz it would be just too damn big. So on every workstation where you clone this repo, you will have to manually create the .env file for the environment variables, and run 'crewai install' to load the project dependencies, and then tweak the .venv/pyvenv.cfg file to 'include-system-site-packages = true'
+
+Hmm so the latest_ai_development crewai ollama mixtral project DOES run on KAUWITB ... all 8 cpu cores are heavily utilized and gpu vram usage is 22578mib. And it took a looong time to run! ... guessing over 5 minutes!
 
 
 
