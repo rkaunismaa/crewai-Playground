@@ -220,6 +220,8 @@ I terminalled into the new groq folder, and then ran 'crewai install' ... this i
 
 So before I commit this new groq code, I am gonna kill that working key from the .env file. Wait! I don't need to do this, because that file is ignored by git by default! Nice! 
 
+OK Nice! I cloned this repo to KAUWITB, set stuff up and was able to 'crewai run' the groq project!
+
 
 
 
