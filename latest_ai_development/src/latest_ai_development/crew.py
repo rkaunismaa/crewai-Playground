@@ -1,14 +1,44 @@
-from crewai import Agent, Crew, Process, Task
-from crewai.project import CrewBase, agent, crew, task
-
 # Deliberately set the OPENAI_API_KEY to an invalid value to ensure that the code is not using it.
 import os
 os.environ['OPENAI_API_KEY'] = "Nope!"
 
 # Must precede any llm module imports
-from langtrace_python_sdk import langtrace
-import os
-langtrace.init(api_key = os.environ['LANGTRACE_API_KEY'])
+# from langtrace_python_sdk import langtrace
+# import os
+# langtrace.init(api_key = os.environ['LANGTRACE_API_KEY'])
+
+
+from crewai import Agent, Crew, Process, Task
+from crewai.project import CrewBase, agent, crew, task
+
+
+from  openai import OpenAI
+
+local_openai_client = OpenAI(base_url="http://localhost:1234/v1", api_key="not-needed")
+
+
+#from crewai import LLM
+#lmstudio = LLM(model="qwen2.5-14b-instruct", base_url="http://localhost:11434/v1", api_key="lmstudio")
+
+
+
+# https://docs.crewai.com/concepts/agents#agent-tools
+# let's try adding some tools for the researcher agent
+# from crewai_tools import SerperDevTool, WikipediaTools
+# from crewai_tools import SerperDevTool
+
+# Create tools
+# search_tool = SerperDevTool()
+# wiki_tool = WikipediaTools()
+
+# # Deliberately set the OPENAI_API_KEY to an invalid value to ensure that the code is not using it.
+# import os
+# os.environ['OPENAI_API_KEY'] = "Nope!"
+
+# # Must precede any llm module imports
+# from langtrace_python_sdk import langtrace
+# import os
+# langtrace.init(api_key = os.environ['LANGTRACE_API_KEY'])
 
 # If you want to run a snippet of code before or after the crew starts, 
 # you can use the @before_kickoff and @after_kickoff decorators
@@ -30,14 +60,18 @@ class LatestAiDevelopment():
 	def researcher(self) -> Agent:
 		return Agent(
 			config=self.agents_config['researcher'],
-			verbose=True
+			# tools=[search_tool, wiki_tool],
+			# tools=[search_tool],
+			verbose=True,
+			llm=local_openai_client
 		)
 
 	@agent
 	def reporting_analyst(self) -> Agent:
 		return Agent(
 			config=self.agents_config['reporting_analyst'],
-			verbose=True
+			verbose=True,
+			llm=local_openai_client
 		)
 
 	# To learn more about structured task outputs, 
