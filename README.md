@@ -226,6 +226,16 @@ Gonna crewai run latest_ai_development on KAUWITB using ollama/mixtral ... Yeah,
 
 Hmm so the latest_ai_development crewai ollama mixtral project DOES run on KAUWITB ... all 8 cpu cores are heavily utilized and gpu vram usage is 22578mib. And it took a looong time to run! ... guessing over 5 minutes!
 
+## Wednesday, January 8, 2025
+
+Continuing with this stuff cuz I want to better understand 'Agents'. Damn ... CrewAI is already at version 0.95.0 ... yeah gonna update. I opened a terminal window, deactivated mamba, then ran ...
+
+10) pip install 'crewai[tools]' --upgrade
+
+Crewai is now at 0.95.0 and crwewai-tools is at 0.25.0
+
+Hmm pip crewai version history is from 0.86.0 (Dec 5, 2024)and then to 0.95.0 (Jan 4, 2025)... nothing in between.
+
 
 
 
